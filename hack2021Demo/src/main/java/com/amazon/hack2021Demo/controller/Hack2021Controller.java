@@ -15,8 +15,8 @@ public class Hack2021Controller {
     private Hack2021Service hack2021Service;
 
     @GetMapping(value = "/asin/{asin}")
-    public ViewerGraphDatum createGraphByVcid(@PathVariable("asin") String asin) {
-        return hack2021Service.createGraphByVcid(asin);
+    public ViewerGraphDatum createGraphByAsin(@PathVariable("asin") String asin) {
+        return hack2021Service.createGraphByAsin(asin);
     }
 
     @GetMapping(value = "/health")
