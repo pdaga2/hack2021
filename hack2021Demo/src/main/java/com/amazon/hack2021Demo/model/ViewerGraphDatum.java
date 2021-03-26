@@ -8,5 +8,5 @@ import lombok.Data;
 public class ViewerGraphDatum {
     private String vcid;
     private int maxScore;
-    private List<Integer> strengthList;
+    private List<Integer> strengthPoints;
 }
