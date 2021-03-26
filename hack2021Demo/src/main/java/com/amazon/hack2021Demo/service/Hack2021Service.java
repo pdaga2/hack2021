@@ -27,6 +27,9 @@ public class Hack2021Service {
             e.printStackTrace();
         }
 
-        return null;
+        return ViewerGraphDatum.builder()
+        .maxScore(100)
+        .asin(asin)
+        .build();
     }
 }
