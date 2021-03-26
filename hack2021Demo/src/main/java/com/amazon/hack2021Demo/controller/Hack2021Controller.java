@@ -14,9 +14,9 @@ public class Hack2021Controller {
     @Autowired
     private Hack2021Service hack2021Service;
 
-    @GetMapping(value = "/{vcid}")
-    public ViewerGraphDatum createGraphByVcid(@PathVariable("vcid") String vcid) {
-        return hack2021Service.createGraphByVcid(vcid);
+    @GetMapping(value = "/asin/{asin}")
+    public ViewerGraphDatum createGraphByVcid(@PathVariable("asin") String asin) {
+        return hack2021Service.createGraphByVcid(asin);
     }
 
     @GetMapping(value = "/health")
