@@ -18,7 +18,7 @@ public class Hack2021Service {
     @Autowired
     private Hack2021Dao hack2021Dao;
     
-    public ViewerGraphDatum createGraphByVcid(String asin) {
+    public ViewerGraphDatum createGraphByAsin(String asin) {
         //TODO write logic to create bucket
         try {
             List<Stream> streamList =  hack2021Dao.getStreamDataByAsin(asin);
