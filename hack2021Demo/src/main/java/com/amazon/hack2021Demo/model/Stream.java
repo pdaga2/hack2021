@@ -7,9 +7,9 @@ import lombok.Data;
 @Data
 public class Stream {
     //TODO Define all the columns
-    @CsvBindByName(column = "column1")
-    private Long column1;
+    @CsvBindByName(column = "playhead")
+    private Long playhead;
 
-    @CsvBindByName(column = "column2")
-    private Long column2;
+    // @CsvBindByName(column = "column2")
+    // private Long column2;
 }
